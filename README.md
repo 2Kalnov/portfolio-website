@@ -1,24 +1,9 @@
-# README
+# Portfolio application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Ruby on Rails 5 application that allows you to create your portfolio and share it with others
 
-Things you may want to cover:
+### Features:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Creating blog posts with comments
+- Creating and showing portfolio
+- Live comments
