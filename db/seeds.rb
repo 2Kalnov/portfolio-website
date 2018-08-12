@@ -21,8 +21,8 @@ puts "Data about skills created"
     title: "Portfolio item #{portfolio_item_index}",
     subtitle: "Web project",
     body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa libero dicta voluptate et neque ullam, rerum atque dolorem laborum dolor molestiae quos. Praesentium ducimus necessitatibus blanditiis quidem excepturi ipsa non, commodi pariatur qui minima ratione explicabo ut, ullam id.",
-    main_image: "placehold.it/250x150",
-    thumb_image: "placehold.it/500x300"  
+    main_image: "http://placehold.it/500x300",
+    thumb_image: "http://placehold.it/250x150"  
   )
 end
 
