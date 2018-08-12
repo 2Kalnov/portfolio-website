@@ -4,5 +4,5 @@
   <p class="portfolioTitle"><%= item.title %></p>
   <p class="portfolioDesc"><%= item.subtitle %></p>
   <p class="portfolioBody"><%= item.body %></p>
-  <img class="portfolioThumb" src="<%= item.thumb_image %>" alt="<%= item.title %>">
+  <%= image_tag(item.thumb_image, alt: item.title, class: "portfolioThumb") unless item.thumb_image.nil? %>
 <% end %>

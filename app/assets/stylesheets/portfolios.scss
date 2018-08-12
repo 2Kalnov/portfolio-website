@@ -9,8 +9,18 @@
 
 .portfolioDesc {
   font-style: italic;
+  font-size: 1.1rem;
 }
 
 .portfolioThumb {
   margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: inline-block;
+  min-width: 70px;
 }
