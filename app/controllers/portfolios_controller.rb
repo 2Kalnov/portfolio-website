@@ -1,6 +1,10 @@
 class PortfoliosController < ApplicationController
   def index
-    @portfolio_items = Portfolio.all#.order(created_at: :desc)
+    @portfolio_items = Portfolio.all
+  end
+
+  def show 
+    @portfolio_item = Portfolio.find(params[:id])
   end
 
   def new

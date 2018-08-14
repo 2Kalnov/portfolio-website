@@ -3,18 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .portfolioTitle {
-  margin-top: 0;
   font-size: 1.5rem;
   font-weight: bold;
+  display: inline-block;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.showItem {
+  margin-bottom: 0;
 }
 
 .portfolioDesc {
   font-style: italic;
   font-size: 1.1rem;
-}
-
-.portfolioThumb {
-  //margin-bottom: 20px;
 }
 
 .field {
