@@ -1,0 +1,6 @@
+<p class="portfolioTitle showItem"><%= @portfolio_item.title %></p>
+<p class="portfolioDesc"><%= @portfolio_item.subtitle %></p>
+<%= image_tag(@portfolio_item.main_image, alt: @portfolio_item.title) unless @portfolio_item.main_image.nil? %>
+<p class="portfolioBody"><%= @portfolio_item.body %></p>
+<%= link_to "Edit item", edit_portfolio_path(@portfolio_item.id), class: "editButton" %>
+<%= link_to "Delete item", @portfolio_item, method: :delete, data: { confirm: 'Are you sure?' }, class: "deleteButton" %>

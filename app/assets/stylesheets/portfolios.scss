@@ -1,3 +1,43 @@
 // Place all the styles related to the Portfolios controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.portfolioTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.showItem {
+  margin-bottom: 0;
+}
+
+.portfolioDesc {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: inline-block;
+  min-width: 70px;
+}
+
+.editButton {
+  display: block;
+}
+
+.portfolioItem {
+  margin-bottom: 25px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: content-box;
+}
