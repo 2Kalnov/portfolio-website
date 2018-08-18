@@ -1,5 +1,16 @@
+topics = ["Ruby", "Ruby on Rails", "Algorithms", "Data Structures", "React", "JavaScript"]
+topics.each do |topic| 
+  Topic.create!(title: topic)
+end
+
+puts "Topics was created"
+
 (0...10).each do |post_index|
-  Blog.create!(title: "Some post about programming #{post_index}", body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae in corrupti illo labore, asperiores rerum at quis velit officiis voluptas molestiae animi unde. Perspiciatis veniam ullam voluptatem, beatae magni nostrum error nihil? Ea ipsa odit dignissimos quidem dolore odio explicabo possimus hic quo veniam reiciendis quibusdam qui dicta natus consequatur nobis eveniet cumque beatae ratione esse debitis quisquam, ab nam? Id a, odit impedit obcaecati optio necessitatibus sint, fugit nam voluptatibus, nihil aut maiores odio. Aspernatur adipisci consequuntur provident nulla eaque omnis, dolorum dolore amet, distinctio illum quas assumenda quisquam! Et dolorem eos, porro molestias ab dicta omnis impedit nemo!")
+  Blog.create!(
+    title: "Some post about programming #{post_index}", 
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae in corrupti illo labore, asperiores rerum at quis velit officiis voluptas molestiae animi unde. Perspiciatis veniam ullam voluptatem, beatae magni nostrum error nihil? Ea ipsa odit dignissimos quidem dolore odio explicabo possimus hic quo veniam reiciendis quibusdam qui dicta natus consequatur nobis eveniet cumque beatae ratione esse debitis quisquam, ab nam? Id a, odit impedit obcaecati optio necessitatibus sint, fugit nam voluptatibus, nihil aut maiores odio. Aspernatur adipisci consequuntur provident nulla eaque omnis, dolorum dolore amet, distinctio illum quas assumenda quisquam! Et dolorem eos, porro molestias ab dicta omnis impedit nemo!",
+    topic_id: Random.new.rand(1...topics.length)
+  )
 end
 
 puts "Blog posts created"
@@ -16,14 +27,22 @@ skills.each { |skill| Skill.create!(title: skill[:title], level: skill[:level])}
 
 puts "Data about skills created"
 
-9.times do |portfolio_item_index|
+8.times do |portfolio_item_index|
   Portfolio.create!(
     title: "Portfolio item #{portfolio_item_index}",
-    subtitle: "Web project",
+    subtitle: "Frontend project",
     body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa libero dicta voluptate et neque ullam, rerum atque dolorem laborum dolor molestiae quos. Praesentium ducimus necessitatibus blanditiis quidem excepturi ipsa non, commodi pariatur qui minima ratione explicabo ut, ullam id.",
     main_image: "http://placehold.it/500x300",
     thumb_image: "http://placehold.it/250x150"  
   )
 end
+
+Portfolio.create!(
+  title: "Portfolio item 8",
+  subtitle: "Backend project",
+  body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa libero dicta voluptate et neque ullam, rerum atque dolorem laborum dolor molestiae quos. Praesentium ducimus necessitatibus blanditiis quidem excepturi ipsa non, commodi pariatur qui minima ratione explicabo ut, ullam id.",
+  main_image: "http://placehold.it/500x300",
+  thumb_image: "http://placehold.it/250x150"  
+)
 
 puts "Created portfolio items"
